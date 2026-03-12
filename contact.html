@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="height: auto;">
+
+  <section id="top-page">
+    <div class="container-fluid background-contact">
+
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg"
+        style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        <a href="{% url 'home' %}" class="navbar-brand"
+          style="padding-left: 40px; font-weight: bold; font-size: 30px;">LuxeStay</a>
+        <button class="navbar-toggler me-3" type="button"
+          data-bs-toggle="collapse" data-bs-target="#mainNavMenu"
+          aria-controls="mainNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavMenu">
+          <ul class="navbar-nav mx-auto gap-lg-4 gap-2 text-center">
+            <li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="{% url 'rooms' %}" class="nav-link">Rooms</a></li>
+            <li class="nav-item"><a href="{% url 'gallery' %}" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link active">Contact</a></li>
+          </ul>
+          <div class="d-flex justify-content-center justify-content-lg-end pe-lg-4 pb-3 pb-lg-0">
+            <button class="btn book-now" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Book Now</button>
+          </div>
+        </div>
+      </nav>
+
+      <h1 class="main-title text-center" style="padding-top: 150px;">Reach Out to Us</h1>
+      <h4 class="sub-title text-center"><i>Let's make your stay effortless.</i></h4>
+    </div>
+  </section>
+
+  <!-- end of banner -->
+
+  <div class="container mt-5"
+    style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+    <h1 style="font-size: 20px; color: black;" class="text-center mb-3">Keep in Touch with us</h1>
+    <h1 style="font-size: 50px; font-weight: bold;" class="text-center">
+      <span style="color: #ad0000;">CONTACT</span> For Any Query
+    </h1>
+
+    <!-- Contact email row -->
+    <div class="contact-email-row" style="margin-top: 140px;">
+      <div>
+        <h3 style="font-size: 20px; font-weight: bold; color: #ad0000;"><u>BOOKING</u></h3>
+        <a href="#" style="text-decoration: none; color: black;">bookluxestay&#64;gmail.com</a>
+      </div>
+      <div>
+        <h3 style="font-size: 20px; font-weight: bold; color: #ad0000;"><u>GENERAL</u></h3>
+        <a href="#" style="text-decoration: none; color: black;">infoluxestay&#64;gmail.com</a>
+      </div>
+      <div>
+        <h3 style="font-size: 20px; font-weight: bold; color: #ad0000;"><u>TECHNICAL</u></h3>
+        <a href="#" style="text-decoration: none; color: black;">techluxestay&#64;gmail.com</a>
+      </div>
+    </div>
+
+    <!-- Images + Form row -->
+    <div class="contact-main-row" style="margin-top: -50px;">
+
+      <!-- LEFT: Images -->
+      <div class="contact-images" style="display: flex; align-items: flex-start; flex-shrink: 0;">
+        <div style="margin-right: -50px; z-index: 1; flex-shrink: 0;">
+          <img src="{% static 'images/contact/contact-1.jpg' %}" class="img-small"
+            style="border-radius: 20px; margin-top: 200px; display: block; height: 150px; width: auto;">
+        </div>
+        <div style="flex-shrink: 0;">
+          <img src="{% static 'images/contact/contact-2.jpg' %}" class="img-large"
+            style="border-radius: 20px; margin-top: 180px; display: block; height: 350px; width: auto;">
+        </div>
+        <div style="margin-left: -50px; flex-shrink: 0;">
+          <img src="{% static 'images/contact/contact-3.jpg' %}" class="img-small-bottom"
+            style="border-radius: 20px; margin-top: 350px; display: block; height: 150px; width: auto;">
+        </div>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="form contact-form" style="margin-top: 150px; margin-left: 100px; flex: 1;">
+        <h1 style="font-size: 30px; text-align: center; margin-bottom: 30px;">Get in
+          <span style="color: #ad0000;">TOUCH</span>
+        </h1>
+        <input type="text" placeholder="Your Name" class="inputs-contact">
+        <input type="email" placeholder="Your Email" class="inputs-contact">
+        <input type="text" placeholder="Subject" style="width: 600px;" class="inputs-contact">
+        <input type="textarea" placeholder="Message" style="width: 600px;" class="inputs-contact">
+        <button class="btn btn-explore"
+          style="margin-left: 200px; margin-top: 20px; border-radius: 30px;">Send Message</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- end of form -->
+
+  <div class="container text-center mb-5"
+    style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: 150px;">
+    <h1 style="font-size: 40px; color: black;">We're Just a Message Away</h1>
+    <p><i>Your comfort begins with a conversation.</i></p>
+  </div>
+
+  <!-- end of tagline -->
+
+  <a href="#top-page" class="btn btn-arrow-up">
+    <i class="fa-solid fa-arrow-up" style="color: #ffffff; font-size: 20px;"></i>
+  </a>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content modal-book">
+        <div class="modal-header">
+          <h1 class="modal-title modal-book-title fs-5" id="staticBackdropLabel">Check Availability</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-black"
+          style="margin: auto; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold;">
+          <div class="d-flex">
+            <div>
+              <p>Checkin Date</p>
+              <input type="date" class="inputs" placeholder="Checkin Date" name="" id="">
+            </div>
+            <div>
+              <p>Checkout Date</p>
+              <input type="date" class="inputs" placeholder="Checkout Date" name="" id="">
+            </div>
+          </div>
+          <div class="d-flex">
+            <div>
+              <p>Adults</p>
+              <input type="number" class="inputs" placeholder="Adults">
+            </div>
+            <div>
+              <p>Children</p>
+              <input type="number" class="inputs" placeholder="Children">
+            </div>
+          </div>
+          <p>Room Type</p>
+          <select name="" id="" class="inputs form-select">
+            <option value="">Select Room Type</option>
+            <option value="">Superior Room</option>
+            <option value="">Deluxe Room</option>
+            <option value="">Signature Room</option>
+            <option value="">Couple Room</option>
+          </select>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-avail">Check Availability</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end of modal -->
+
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="{% url 'rooms' %}" class="nav-link px-2 text-body-secondary">Rooms</a></li>
+        <li class="nav-item"><a href="{% url 'gallery' %}" class="nav-link px-2 text-body-secondary">Gallery</a></li>
+        <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link px-2 text-body-secondary">Contact</a></li>
+        <li class="nav-item"><a href="{% url 'about' %}" class="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2025 LuxeStay</p>
+    </footer>
+  </div>
+
+  <!-- end of footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

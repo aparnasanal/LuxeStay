@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LuxeStay - Gallery</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+
+<section>
+<div class="container-fluid background-gallery">
+
+ <nav class="navbar navbar-expand-lg"
+      style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+
+      <!-- Brand -->
+      <a href="{% url 'home' %}" class="navbar-brand"
+        style="padding-left: 40px; font-weight: bold; font-size: 30px;">LuxeStay</a>
+
+      <!-- Hamburger toggle (mobile only) -->
+      <button class="navbar-toggler me-3" type="button"
+        data-bs-toggle="collapse" data-bs-target="#mainNavMenu"
+        aria-controls="mainNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible menu -->
+      <div class="collapse navbar-collapse" id="mainNavMenu">
+
+        <!-- Center links -->
+        <ul class="navbar-nav mx-auto gap-lg-4 gap-2 text-center">
+          <li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="{% url 'rooms' %}" class="nav-link">Rooms</a></li>
+          <li class="nav-item"><a href="{% url 'gallery' %}" class="nav-link active">Gallery</a></li>
+          <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Book Now — right side -->
+        <div class="d-flex justify-content-center justify-content-lg-end pe-lg-4 pb-3 pb-lg-0">
+          <button class="btn book-now" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Book Now</button>
+        </div>
+
+      </div>
+    </nav>
+
+<h1 class="main-title text-center" style="padding-top: 150px;">Our Gallery</h1>
+<h4 class="sub-title text-center"><i>Explore the beauty of LuxeStay</i></h4>
+
+</div>
+</section>
+
+
+<!-- GALLERY GRID -->
+
+<div class="container mt-5">
+
+<h3 class="text-center" style="font-size:16px;">LuxeStay Moments</h3>
+<h1 class="text-center mb-5" style="font-weight:bold;">Inside Our Hotel</h1>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<img src="{% static 'images/gallery/g1.jpg' %}" class="gallery-img img-fluid">
+</div>
+
+<div class="col-md-4">
+<img src="{% static 'images/gallery/g2.jpg' %}" class="gallery-img img-fluid">
+</div>
+
+<div class="col-md-4">
+<img src="{% static 'images/gallery/g3.jpg' %}" class="gallery-img img-fluid">
+</div>
+
+<div class="col-md-4">
+<img src="{% static 'images/gallery/g4.jpg' %}" class="gallery-img img-fluid">
+</div>
+
+<div class="col-md-4">
+<img src="{% static 'images/gallery/g5.jpg' %}" class="gallery-img img-fluid">
+</div>
+
+<div class="col-md-4">
+<img src="{% static 'images/gallery/g6.jpg' %}" class="gallery-img img-fluid">
+</div>
+
+<div class="col-md-4">
+<img src="{% static 'images/gallery/g7.jpg' %}" class="gallery-img img-fluid">
+</div>
+
+<div class="col-md-4">
+<img src="{% static 'images/gallery/g8.jpg' %}" class="gallery-img img-fluid">
+</div>
+
+<div class="col-md-4">
+<img src="{% static 'images/gallery/g9.jpg' %}" class="gallery-img img-fluid">
+</div>
+
+</div>
+
+</div>
+
+
+<!-- TAGLINE -->
+
+<div class="container text-center mt-5 mb-5"
+style="font-family:'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Geneva,Verdana,sans-serif;">
+
+<h1 style="font-size:40px;">Capture the Luxury</h1>
+<p><i>Every corner of LuxeStay tells a story.</i></p>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<div class="container">
+<footer class="py-3 my-4">
+
+<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+<li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-body-secondary">Home</a></li>
+<li class="nav-item"><a href="{% url 'rooms' %}" class="nav-link px-2 text-body-secondary">Rooms</a></li>
+<li class="nav-item"><a href="{% url 'gallery' %}" class="nav-link px-2 text-body-secondary">Gallery</a></li>
+<li class="nav-item"><a href="{% url 'contact' %}" class="nav-link px-2 text-body-secondary">Contact</a></li>
+<li class="nav-item"><a href="{% url 'about' %}" class="nav-link px-2 text-body-secondary">About</a></li>
+</ul>
+
+<p class="text-center text-body-secondary">© 2025 LuxeStay</p>
+
+</footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+</html>
